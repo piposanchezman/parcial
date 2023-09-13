@@ -17,20 +17,20 @@
             </div>  
         <form method="post">
         <label>Longitud del muro</label>
-        <input type="number" name="ancho" placeholder="ancho">
-        <input type="number" name="alto" placeholder="alto">
+        <input type="phone" name="ancho" placeholder="Ancho (m)">
+        <input type="phone" name="alto" placeholder="Alto (m)">
         <select name="tladrillo">Tipo de ladrillo
             <option value="kingkong">King Kong</option>
             <option value="modular">Modular</option>
         </select>
             <input type="radio" name="tmuro" value="soga">Soga</option>
             <input type="radio" name="tmuro" value="tizon">Tizon</option>
-        <label>Juntas</label>
-            <input type="number" name="jhorizontal" step="any">
-            <input type="number" name="jvertical" step="any">
+        <label>Espesor Juntas</label>
+            <input type="phone" step="any" name="jhorizontal" placeholder="Horizontal (m)">
+            <input type="phone" step="any" name="jvertical" placeholder="Vertical (m)">
         <label>Costo ladrillo</label>
         <input type="price" name="costo">
-        <input type="submit">
+        <button class="px-2 rounded-full border-2 border-orange-950">Calcular</button>
         <?php include 'calcular.php'; ?>
         </form>
     </div> 
